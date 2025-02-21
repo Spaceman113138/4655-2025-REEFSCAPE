@@ -174,4 +174,3 @@ public class ElevatorIOSparkMax implements ElevatorIO {
     m_rightElevator.stopMotor();
   }
 }
-}
