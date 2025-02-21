@@ -138,7 +138,6 @@ public class ElevatorIOSparkMax implements ElevatorIO {
         feedforward.calculate(leftEncoder.getVelocity()),
         ArbFFUnits.kVoltage);
     } else {
-      leftElevatorController.setReference(-10, SparkBase.ControlType.kVelcity);
       // rightElevatorController.setReference(-100, SparkBase.ControlType.kMAXMotionPositionControl);
       leftElevatorController.setReference(0, ControlType.kVoltage);
     }
