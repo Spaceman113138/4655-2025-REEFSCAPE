@@ -99,13 +99,11 @@ public class ElevatorIOSparkMax implements ElevatorIO {
         mRightConfig, ResetMode.kResetSafeParameters, PersistMode.kPersistParameters);
 
     leftEncoder = m_leftElevator.getEncoder();
-    rightEncoder = m_rightElevator.getEncoder();
     funnelEncoder = m_funnel.getEncoder();
 
     limitSwitch = m_leftElevator.getReverseLimitSwitch();
 
     leftElevatorController = m_leftElevator.getClosedLoopController();
-    rightElevatorController = m_rightElevator.getClosedLoopController();
     funnelController = m_funnel.getClosedLoopController();
     beltController = m_belt.getClosedLoopController();
   }
